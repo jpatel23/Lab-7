@@ -12,13 +12,13 @@ Tasks:
 3. Create PriorityQueueHospital class
 4. Create HealthyPerson class
 5. Create SickPerson class
-6. 
-7. 
-8. 
-9. 
-10. 
-11. 
-12. 
+6. StackHospital: Create a stack
+7. StackHospital: addPatient
+8. StackHospital: nextPatient
+9. StackHospital: treatNextPatient
+10. StackHospital: numPatients
+11. StackHospital: hospitalType
+12. StackHospital: allPatientInfo
 13. 
 15. 
 16. 
@@ -46,13 +46,13 @@ Estimated Time (minutes):
 3. 3
 4. 3
 5. 3
-6. 
-7. 
-8. 
-9. 
-10. 
-11. 
-12. 
+6. 1
+7. 5
+8. 3
+9. 2
+10. 1
+11. 1
+12. 5
 13. 
 14. 
 15. 
@@ -80,13 +80,13 @@ Actual Time (minutes):
 3. 1
 4. 1
 5. 1
-6. 
-7. 
-8. 
-9. 
-10. 
-11. 
-12. 
+6. 1
+7. 2
+8. 1
+9. 2
+10. 1
+11. 1
+12. 3
 13. 
 14. 
 15. 

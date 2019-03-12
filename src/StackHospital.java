@@ -1,40 +1,52 @@
+import java.util.ArrayList;
 
 public class StackHospital<PatientType> extends Hospital<PatientType> {
 
+	ArrayList<PatientType> stackPatients = new ArrayList<PatientType>();
+	
 	@Override
 	public void addPatient(PatientType patient) {
-		// TODO Auto-generated method stub
+		// TODO DONE
+		stackPatients.add(patient);
 
 	}
 
 	@Override
 	public PatientType nextPatient() {
-		// TODO Auto-generated method stub
-		return null;
+		// TODO DONE
+		return stackPatients.get(stackPatients.size() - 1);
 	}
 
 	@Override
 	public PatientType treatNextPatient() {
-		// TODO Auto-generated method stub
-		return null;
+		// TODO DONE
+		PatientType treated = stackPatients.get(stackPatients.size() - 1);
+		stackPatients.remove(stackPatients.size() - 1);
+		return treated;
 	}
 
 	@Override
 	public int numPatients() {
-		// TODO Auto-generated method stub
-		return 0;
+		// TODO DONE
+		return stackPatients.size();
 	}
 
 	@Override
 	public String hospitalType() {
-		// TODO Auto-generated method stub
-		return null;
+		// TODO DONE
+		return "StackHospital";
 	}
 
 	@Override
 	public String allPatientInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		// TODO DONE
+		String info = "";
+		
+		for (int index = 0; index < stackPatients.size(); ++index) {
+			info = info + stackPatients.get(index).toString() + "\n";
+		}
+		
+		return info;
 	}
 
 }
