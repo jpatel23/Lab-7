@@ -2,7 +2,11 @@ import java.util.ArrayList;
 
 public class StackHospital<PatientType> extends Hospital<PatientType> {
 
-	ArrayList<PatientType> stackPatients = new ArrayList<PatientType>();
+	ArrayList<PatientType> stackPatients;
+	
+	public StackHospital() {
+		stackPatients = new ArrayList<PatientType>();
+	}
 	
 	@Override
 	public void addPatient(PatientType patient) {
