@@ -1,15 +1,41 @@
 
 public class SickPerson extends Person {
 
-	public SickPerson(String name, int age) {
+	private int severity;
+	public SickPerson(String name, int age, int severity) {
 		super(name, age);
-		// TODO Auto-generated constructor stub
+		// TODO DONE
+		this.severity = severity;
+	}
+	
+	public String toString() {
+		// TODO DONE
+		String statement = super.toString();
+		statement = statement + " Severity: " + severity;
+		return statement;
+		
 	}
 
 	@Override
 	protected int compareToImpl(Person p) {
-		// TODO Auto-generated method stub
-		return 0;
+		// TODO DONE
+		if (p instanceof SickPerson) {
+			if (this.severity > ((SickPerson) p).severity) {
+				return -1;
+			}
+			
+			else if (this.severity < ((SickPerson) p).severity) {
+				return 1;
+			}
+			
+			else {
+				return 0;
+			}
+		}
+		
+		else {
+			return -1;
+		}
 	}
 
 }

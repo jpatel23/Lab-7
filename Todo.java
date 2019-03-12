@@ -33,12 +33,12 @@ Tasks:
 24. PriorityQueueHospital: numPatients
 25. PriorityQueueHospital: hospitalType
 26. PriorityQueueHospital: allPatientInfo
-27. 
-28. 
-29. 
-30. 
-31.
-32. 
+27. HealthyPerson: Constructor
+28. HealthyPerson: toString
+29. HealthyPerson: compareToImpl
+30. SickPerson: Constructor
+31. SickPerson: toString
+32. SickPerson: compareToImpl
 33. 
 
 Estimated Time (minutes):
@@ -68,12 +68,12 @@ Estimated Time (minutes):
 24. 1
 25. 1
 26. 3
-27. 
-28. 
-29. 
-30. 
-31. 
-32. 
+27. 1
+28. 5
+29. 5
+30. 1
+31. 5
+32. 5
 33. 
 Actual Time (minutes):
 1. 1
@@ -102,11 +102,11 @@ Actual Time (minutes):
 24. 1
 25. 1
 26. 2
-27. 
-28. 
-29. 
-30. 
-31. 
-32. 
+27. 1
+28. 3
+29. 3
+30. 1
+31. 2
+32. 3
 33. 
 */}
