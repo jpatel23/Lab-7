@@ -26,13 +26,13 @@ Tasks:
 17. QueueHospital: numPatients
 18. QueueHospital: hospitalType
 19. QueueHospital: allPatientInfo
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
+20. PriorityQueueHospital: Create a stack & constructor
+21. PriorityQueueHospital: addPatient
+22. PriorityQueueHospital: nextPatient
+23. PriorityQueueHospital: treatNextPatient
+24. PriorityQueueHospital: numPatients
+25. PriorityQueueHospital: hospitalType
+26. PriorityQueueHospital: allPatientInfo
 27. 
 28. 
 29. 
@@ -61,13 +61,13 @@ Estimated Time (minutes):
 17. 1
 18. 1
 19. 3 
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
+20. 5
+21. 1
+22. 1
+23. 2
+24. 1
+25. 1
+26. 3
 27. 
 28. 
 29. 
@@ -95,13 +95,13 @@ Actual Time (minutes):
 17. 1
 18. 1
 19. 2
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
+20. 3
+21. 1
+22. 1
+23. 1
+24. 1
+25. 1
+26. 2
 27. 
 28. 
 29. 
