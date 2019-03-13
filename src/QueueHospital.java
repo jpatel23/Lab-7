@@ -43,14 +43,8 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 
 	@Override
 	public String allPatientInfo() {
-		// TODO DONE
-		String info = "";
 		
-		for (int index = 0; index < queuePatients.size(); ++index) {
-			info = info + queuePatients.get(index).toString();
-		}
-		
-		return info;
+		return String.format("A %s-type hospital with %d patients.", hospitalType(), numPatients());
 	}
 
 }

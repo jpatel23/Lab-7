@@ -46,13 +46,8 @@ public class PriorityQueueHospital<PatientType extends Comparable<PatientType>> 
 	@Override
 	public String allPatientInfo() {
 		// TODO DONE
-		String info = "";
 		
-		for (int index = 0; index < priorQueuePatients.size(); ++index) {
-			info = info + priorQueuePatients.get(index).toString();
-		}
-		
-		return info;
+		return String.format("A %s-type hospital with %d patients.", hospitalType(), numPatients());
 	}
 
 }

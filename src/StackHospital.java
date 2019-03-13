@@ -45,13 +45,8 @@ public class StackHospital<PatientType> extends Hospital<PatientType> {
 	@Override
 	public String allPatientInfo() {
 		// TODO DONE
-		String info = "";
-		
-		for (int index = 0; index < stackPatients.size(); ++index) {
-			info = info + stackPatients.get(index).toString();
-		}
-		
-		return info;
+	
+		return String.format("A %s-type hospital with %d patients.", hospitalType(), numPatients());
 	}
 
 }
