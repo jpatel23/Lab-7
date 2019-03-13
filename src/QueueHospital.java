@@ -17,7 +17,8 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 	@Override
 	public PatientType nextPatient() {
 		// TODO DONE
-		return queuePatients.get(queuePatients.size() - 1);
+		PatientType next = queuePatients.get(queuePatients.size() - 1);
+		return next;
 	}
 
 	@Override
@@ -46,7 +47,7 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 		String info = "";
 		
 		for (int index = 0; index < queuePatients.size(); ++index) {
-			info = info + queuePatients.get(index).toString() + "\n";
+			info = info + queuePatients.get(index).toString();
 		}
 		
 		return info;

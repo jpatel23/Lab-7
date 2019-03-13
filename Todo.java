@@ -39,7 +39,19 @@ Tasks:
 30. SickPerson: Constructor
 31. SickPerson: toString
 32. SickPerson: compareToImpl
-33. 
+33. HospitalTest: ConstructorTest
+34. HospitalTest: addPatientTest
+35. HospitalTest: nextPatientTest
+36. HospitalTest: treatNextPatientTest
+37. HospitalTest: numPatientTest
+38. HospitalTest: hospitalTypeTest
+39. HospitalTest: allPatientInfoTest
+40. PatientTypeTest: ConstructorTest
+41. PatientTypeTest: toStringTest
+42. PatientTypeTest: compareToImplTest
+43. PatientTypeTest: getBreedTest
+44. PatientTypeTest: getAgeTest
+45. PatientTypeTest: compareToTest
 
 Estimated Time (minutes):
 1. 3
@@ -74,7 +86,19 @@ Estimated Time (minutes):
 30. 1
 31. 5
 32. 5
-33. 
+33. 5
+34. 5
+35. 5
+36. 5
+37. 5
+38. 5
+39. 5
+40. 5
+41. 5 
+42. 5
+43. 5
+44. 5
+45. 5
 Actual Time (minutes):
 1. 1
 2. 1
@@ -108,5 +132,17 @@ Actual Time (minutes):
 30. 1
 31. 2
 32. 3
-33. 
+33. 5
+34. 5
+35. 5
+36. 3
+37. 3 
+38. 3
+39. 3
+40. 5
+41. 3
+42. 3
+43. 2
+44. 2
+45. 3
 */}

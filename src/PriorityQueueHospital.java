@@ -49,7 +49,7 @@ public class PriorityQueueHospital<PatientType extends Comparable<PatientType>> 
 		String info = "";
 		
 		for (int index = 0; index < priorQueuePatients.size(); ++index) {
-			info = info + priorQueuePatients.get(index).toString() + "\n";
+			info = info + priorQueuePatients.get(index).toString();
 		}
 		
 		return info;

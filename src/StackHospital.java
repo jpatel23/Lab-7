@@ -18,13 +18,14 @@ public class StackHospital<PatientType> extends Hospital<PatientType> {
 	@Override
 	public PatientType nextPatient() {
 		// TODO DONE
-		return stackPatients.get(stackPatients.size() - 1);
+		PatientType next = stackPatients.get(stackPatients.size() - 1);
+		return next;
 	}
 
 	@Override
 	public PatientType treatNextPatient() {
 		// TODO DONE
-		PatientType treated = stackPatients.get(stackPatients.size() - 1);
+		PatientType treated = nextPatient();
 		stackPatients.remove(stackPatients.size() - 1);
 		return treated;
 	}
@@ -47,7 +48,7 @@ public class StackHospital<PatientType> extends Hospital<PatientType> {
 		String info = "";
 		
 		for (int index = 0; index < stackPatients.size(); ++index) {
-			info = info + stackPatients.get(index).toString() + "\n";
+			info = info + stackPatients.get(index).toString();
 		}
 		
 		return info;
